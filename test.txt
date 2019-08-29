@@ -1,0 +1,26 @@
+package DriverMethods;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+public class PropertyFileReader {
+  Properties prop = new Properties();
+  FileInputStream file;
+  FileOutputStream fileOut;
+ 
+  //Reusable method for reading data
+  public String readingData(String key) throws IOException{
+   
+   //path of properties file
+   file = new FileInputStream("path of property file");
+   
+   // load a properties file
+   prop.load(file);
+   
+   //get the value of key
+   String out=prop.getProperty(key);
+   return out;
+ 
+  }
