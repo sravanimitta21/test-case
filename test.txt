@@ -16,8 +16,8 @@ public class PropertyFileReader {
    //path of properties file
    file = new FileInputStream("path of property file");
    
-   // load a properties file
-   prop.load(file);
+   
+  
    
  
   }
