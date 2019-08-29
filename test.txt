@@ -19,8 +19,5 @@ public class PropertyFileReader {
    // load a properties file
    prop.load(file);
    
-   //get the value of key
-   String out=prop.getProperty(key);
-   return out;
  
   }
